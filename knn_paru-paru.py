@@ -11,79 +11,18 @@ SMOKING = st.radio('Apakah pasien merokok?', SMOKING)
 YELLOW_FINGERS = ['YES', 'NO']
 YELLOW_FINGERS = st.radio('Apakah pasien jari pasien kuning?', YELLOW_FINGERS)
 
-st.write("Anda memilih", genre)
+AXIENTY = ['YES', 'NO']
+AXIENTY = st.radio('Apakah pasien mempunyai kecemasan berlebih?', AXIENTY)
 
-genre = st.radio(
-    "Apakah pasien jari pasien kuning?",
-    ["YES", "NO"],
-    index=None,
-)
+PEER_PRESSURE = ['YES', 'NO']
+PEER_PRESSURE= st.radio('Apakah pasien mempunyai tekanan dari teman sebaya?', PEER_PRESSURE)
 
-st.write("Anda memilih", genre)
+COUGHING = ['YES', 'NO']
+COUGHING = st.radio('Apakah pasien batuk-batuk?', COUGHING)
 
-genre = st.radio(
-    "Apakah pasien mempunyai kecemasan berlebih?",
-    ["YES", "NO"],
-    index=None,
-)
+SHORTNESS OF BREATH= ['YES', 'NO']
+SHORTNESS OF BREATH = st.radio('Apakah pasien sesak nafas?', SHORTNESS OF BREATH)
 
-st.write("Anda memilih", genre)
-
-genre = st.radio(
-    "Apakah pasien mempunyai tekanan dari teman sebaya?",
-    ["YES", "NO"],
-    index=None,
-)
-
-st.write("Anda memilih", genre)
-
-genre = st.radio(
-    "Apakah pasien batuk-batuk?",
-    ["YES", "NO"],
-    index=None,
-)
-
-st.write("Anda memilih", genre)
-
-genre = st.radio(
-    "Apakah pasien sesak nafas?",
-    ["YES", "NO"],
-    index=None,
-)
-
-st.write("Anda memilih", genre)
-
-genre = st.radio(
-    "Apakah pasien kesulitan menelan?",
-    ["YES", "NO"],
-    index=None,
-)
-
-st.write("Anda memilih", genre)
-
-genre = st.radio(
-    "Apakah pasien nyeri dada?",
-    ["YES", "NO"],
-    index=None,
-)
-
-st.write("Anda memilih", genre)
-
-genre = st.radio(
-    "Apakah pasien mempunyai penyakit kronis?",
-    ["YES", "NO"],
-    index=None,
-)
-
-st.write("Anda memilih", genre)
-
-genre = st.radio(
-    "Apakah pasien mengi (Napas Berbunyi?",
-    ["YES", "NO"],
-    index=None,
-)
-
-st.write("Anda memilih", genre)
 
 
 predict = ''
