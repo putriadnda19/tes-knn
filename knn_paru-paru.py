@@ -4,12 +4,7 @@ import streamlit as st
 st.title('Estimasi Pasien Yang Menderita Kanker Paru-Paru')
 
 AGE = st.number_input('Input umur pasien')
-
-genre = st.radio(
-    "Apakah pasien merokok?",
-    ["YES", "NO"],
-    index=None,
-)
+TotalFat = st.radio('Apakah pasien jari pasien kuning?')
 
 st.write("Anda memilih", genre)
 
