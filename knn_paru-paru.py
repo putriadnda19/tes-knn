@@ -7,7 +7,7 @@ AGE = st.number_input('Input umur pasien')
 SMOKING = ['YES', 'NO']
 
 SMOKING = st.radio('Apakah pasien merokok?', SMOKING)
-st.write("Anda memilih", SOMKING)
+st.write("Anda memilih", SMOKING)
 
 st.write("Anda memilih", genre)
 
