@@ -20,8 +20,8 @@ PEER_PRESSURE= st.radio('Apakah pasien mempunyai tekanan dari teman sebaya?', PE
 COUGHING = ['YES', 'NO']
 COUGHING = st.radio('Apakah pasien batuk-batuk?', COUGHING)
 
-SHORTNESS OF BREATH= ['YES', 'NO']
-SHORTNESS OF BREATH = st.radio('Apakah pasien sesak nafas?', SHORTNESS OF BREATH)
+SHORTNESSOFBREATH= ['YES', 'NO']
+SHORTNESSOFBREATH = st.radio('Apakah pasien sesak nafas?', SHORTNESSOFBREATH)
 
 
 
