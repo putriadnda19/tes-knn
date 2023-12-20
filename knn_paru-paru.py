@@ -3,7 +3,7 @@ import streamlit as st
 
 st.title('Estimasi Pasien Yang Menderita Kanker Paru-Paru')
 
-AGE = st.number_input("Input umur pasien", value=None, placeholder="Type a number...")
+AGE = st.number_input('Input umur pasien')
 
 SMOKING = ['YES', 'NO']
 SMOKING = st.radio('Apakah pasien merokok?', SMOKING)
