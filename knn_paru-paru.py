@@ -20,10 +20,20 @@ PEER_PRESSURE= st.radio('Apakah pasien mempunyai tekanan dari teman sebaya?', PE
 COUGHING = ['YES', 'NO']
 COUGHING = st.radio('Apakah pasien batuk-batuk?', COUGHING)
 
-SHORTNESSOFBREATH= ['YES', 'NO']
-SHORTNESSOFBREATH = st.radio('Apakah pasien sesak nafas?', SHORTNESSOFBREATH)
+SHORTNESS_OF_BREATH = ['YES', 'NO']
+SHORTNESS_OF_BREATH = st.radio('Apakah pasien sesak nafas?', SHORTNESS_OF_BREATH)
 
+SWALLOWING_DIFFICULTY = ['YES', 'NO']
+SWALLOWING_DIFFICULTY = st.radio('Apakah pasien kesulitan menelan?', SWALLOWING_DIFFICULTY)
 
+CHEST_PAIN = ['YES', 'NO']
+CHEST_PAIN = st.radio('Apakah pasien nyeri dada?', CHEST_PAIN)
+
+CHRONIC_DISEASE = ['YES', 'NO']
+CHRONIC_DISEASE = st.radio('Apakah pasien mempunyai penyakit kronis?', CHRONIC_DISEASE)
+
+WHEEZING = ['YES', 'NO']
+WHEEZING = st.radio('Apakah pasien mengi (Napas Berbunyi?', WHEEZING)
 
 predict = ''
 
