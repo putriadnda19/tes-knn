@@ -1,8 +1,6 @@
 import pickle 
 import streamlit as st 
 
-model = pickle.load(open('knn_paru-paru.sav', 'rb'))
-
 st.title('Estimasi Pasien Yang Menderita Kanker Paru-Paru')
 
 AGE = st.number_input('Input umur pasien')
