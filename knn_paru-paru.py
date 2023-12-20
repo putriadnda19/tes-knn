@@ -38,7 +38,5 @@ WHEEZING = st.radio('Apakah pasien mengi (Napas Berbunyi?', WHEEZING)
 predict = ''
 
 if st.button('Estimasi '):
-    predict = model.predict(
-        [[AGE, SMOKING, YELLOW_FINGERS, ANXIETY, PEER_PRESSURE, COUGHING, SHORTNESS OF BREATH, SWALLOWING DIFFICULTY, CHEST PAIN, CHRONIC DISEASE, WHEEZING]]
-    )
+    
     st.write('Aapakah Pasien Menderita Kanker Paru-Paru?: ', predict)
