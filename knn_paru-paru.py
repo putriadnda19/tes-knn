@@ -35,7 +35,7 @@ st.write('**Note**: 1 = NO, 2 = YES')
 WHEEZING = st.radio('**Apakah pasien mengi (Napas Berbunyi)?**', ["1", "2"])
 st.write('**Note**: 1 = NO, 2 = YES')
 
-predict = ''
+y_pred = ''
 
 if st.button('Estimasi '):
     y_pred = knn_model.predict(
