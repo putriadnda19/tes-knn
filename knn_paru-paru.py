@@ -1,6 +1,8 @@
 import pickle 
 import streamlit as st 
 
+model = pickle.load(open('knn-paru-paru.sav', 'rb'))
+
 st.title('Estimasi Pasien Yang Menderita Kanker Paru-Paru')
 
 AGE = st.slider('**Input umur pasien**', 1, 80)
@@ -38,7 +40,7 @@ st.write('**Note**: 1 = NO, 2 = YES')
 predict = ''
 
 if st.button('Estimasi '):
-    predict = knn_model.predict(
+    predict = model.predict(
         [[AGE, SMOKING, YELLOW_FINGERS, ANXIETY, PEER_PRESSURE, COUGHING, SHORTNESS_OF_BREATH, SWALLOWING_DIFFICULTY, CHEST_PAIN, CHRONIC_DISEASE, WHEEZING]]
     )
     st.write('Aapakah Pasien Menderita Kanker Paru-Paru?: ', predict)
