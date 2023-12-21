@@ -39,7 +39,7 @@ st.write('**Note**: 1 = NO, 2 = YES')
 
 predict = ''
 
-if st.button('Estimasi '):
+if st.button('Estimasi ', type="primary"):
     predict = model.predict(
         [[AGE, SMOKING, YELLOW_FINGERS, ANXIETY, PEER_PRESSURE, COUGHING, SHORTNESS_OF_BREATH, SWALLOWING_DIFFICULTY, CHEST_PAIN, CHRONIC_DISEASE, WHEEZING]]
     )
