@@ -33,7 +33,7 @@ CHRONIC_DISEASE = ['YES', 'NO']
 CHRONIC_DISEASE = st.radio('Apakah pasien mempunyai penyakit kronis?', CHRONIC_DISEASE)
 
 WHEEZING = ['YES', 'NO']
-WHEEZING = st.radio('Apakah pasien mengi (Napas Berbunyi?', WHEEZING)
+WHEEZING = st.radio('Apakah pasien mengi (Napas Berbunyi)?', WHEEZING)
 
 predict = ''
 
