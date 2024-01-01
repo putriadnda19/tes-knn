@@ -101,7 +101,7 @@ else:
 
 
 
-kelas = ''
+kanker = ''
 
 if st.button('Estimasi'):
     estimasi_pasien = model.predict([[AGE, SMOKING, YELLOW_FINGERS, ANXIETY, PEER_PRESSURE, COUGHING, SHORTNESS_OF_BREATH, SWALLOWING_DIFFICULTY, CHEST_PAIN, CHRONIC_DISEASE, WHEEZING]])
