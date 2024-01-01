@@ -101,16 +101,14 @@ else:
 
 
 
-predict = ''
+kelas = ''
 
 if st.button('Estimasi'):
-        predict = knn_model.predict(
-        [[AGE, SMOKING, YELLOW_FINGERS, ANXIETY, PEER_PRESSURE, COUGHING, SHORTNESS_OF_BREATH, SWALLOWING_DIFFICULTY, CHEST_PAIN, CHRONIC_DISEASE, WHEEZING]]
-    )
+    estimasi_pasien = model.predict([[AGE, SMOKING, YELLOW_FINGERS, ANXIETY, PEER_PRESSURE, COUGHING, SHORTNESS_OF_BREATH, SWALLOWING_DIFFICULTY, CHEST_PAIN, CHRONIC_DISEASE, WHEEZING]])
     
     if(estimasi_pasien[0] == 0):
-        predict = 'Pasien menderita kanker paru-paru'
+        kanker = 'Pasien menderita kanker paru-paru'
     else :
-        predict ='Pasien tidak menderita kanker paru-paru'
+        kanker ='Pasien tidak menderita kanker paru-paru'
 
-    st.success(predict)
+    st.success(kanker)
