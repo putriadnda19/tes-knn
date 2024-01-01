@@ -9,93 +9,93 @@ st.title('Estimasi Pasien Yang Menderita Kanker Paru-Paru')
 
 
 AGE = st.text_input('Usia Pasien')
-SMOKING = st.selectbox('Apakah pasien merokok?', ['1', '2'])
+SMOKING = st.selectbox('Apakah pasien merokok?', ['YES', 'NO'])
 
-if SMOKING == '1':
-    SMOKING = NO
-elif SMOKING == '2':
-    SMOKING = YES
+if SMOKING == 'YES':
+    SMOKING = 2
+elif SMOKING == 'NO':
+    SMOKING = 1
 else:
     SMOKING = 0
 
-YELLOW_FINGERS = st.selectbox('Apakah pasien jari pasien kuning?', ['1', '2'])
+YELLOW_FINGERS = st.selectbox('Apakah pasien jari pasien kuning?', ['YES', 'NO'])
     
-if YELLOW_FINGERS == '1':
-    YELLOW_FINGERS = NO
-elif YELLOW_FINGERS == '2':
-    YELLOW_FINGERS = YES
+if YELLOW_FINGERS == 'YES':
+    YELLOW_FINGERS = 2
+elif YELLOW_FINGERS == 'NO':
+    YELLOW_FINGERS = 1
 else:
     YELLOW_FINGERS = 0
 
-ANXIETY = st.selectbox('Apakah pasien mempunyai kecemasan berlebih?', ['1', '2'])
+ANXIETY = st.selectbox('Apakah pasien mempunyai kecemasan berlebih?', ['YES', 'NO'])
     
-if ANXIETY == '1':
-    ANXIETY = NO
-elif ANXIETY == '2':
-    ANXIETY = YES
+if ANXIETY == 'YES':
+    ANXIETY = 2
+elif ANXIETY == 'NO':
+    ANXIETY = 1
 else:
     ANXIETY = 0
 
-PEER_PRESSURE = st.selectbox('Apakah pasien mempunyai tekanan?', ['1', '2'])
+PEER_PRESSURE = st.selectbox('Apakah pasien mempunyai tekanan?', ['YES', 'NO'])
     
-if PEER_PRESSURE == '1':
-   PEER_PRESSURE = NO
-elif PEER_PRESSURE == '2':
-    PEER_PRESSURE = YES
+if PEER_PRESSURE == 'YES':
+   PEER_PRESSURE = 2
+elif PEER_PRESSURE == 'NO':
+    PEER_PRESSURE = 1
 else:
     PEER_PRESSURE = 0
 
-COUGHING = st.selectbox('Apakah pasien batuk-batuk?', ['1', '2'])
+COUGHING = st.selectbox('Apakah pasien batuk-batuk?', ['YES', 'NO'])
     
-if COUGHING == '1':
-   COUGHING = NO
-elif COUGHING == '2':
-    COUGHING = YES
+if COUGHING == 'YES':
+   COUGHING = 2
+elif COUGHING == 'NO':
+    COUGHING = 1
 else:
     COUGHING = 0
 
-SHORTNESS_OF_BREATH = st.selectbox('Apakah pasien sesak nafas?', ['1', '2'])
+SHORTNESS_OF_BREATH = st.selectbox('Apakah pasien sesak nafas?', ['YES', 'NO'])
     
-if SHORTNESS_OF_BREATH== '1':
-   SHORTNESS_OF_BREATH = NO
-elif SHORTNESS_OF_BREATH == '2':
-    SHORTNESS_OF_BREATH = YES
+if SHORTNESS_OF_BREATH== 'YES':
+   SHORTNESS_OF_BREATH = 2
+elif SHORTNESS_OF_BREATH == 'NO':
+    SHORTNESS_OF_BREATH = 1
 else:
     SHORTNESS_OF_BREATH = 0
 
-SWALLOWING_DIFFICULTY = st.selectbox('Apakah pasien kesulitan menelan?', ['1', '2'])
+SWALLOWING_DIFFICULTY = st.selectbox('Apakah pasien kesulitan menelan?', ['YES', 'NO'])
     
-if SWALLOWING_DIFFICULTY== '1':
-   SWALLOWING_DIFFICULTY = NO
-elif SWALLOWING_DIFFICULTY == '2':
-    SWALLOWING_DIFFICULTY = YES
+if SWALLOWING_DIFFICULTY== 'YES':
+   SWALLOWING_DIFFICULTY = 2
+elif SWALLOWING_DIFFICULTY == 'NO':
+    SWALLOWING_DIFFICULTY = 1
 else:
     SWALLOWING_DIFFICULTY = 0
 
-CHEST_PAIN = st.selectbox('Apakah pasien nyeri dada?', ['1', '2'])
+CHEST_PAIN = st.selectbox('Apakah pasien nyeri dada?', ['YES', 'NO'])
     
-if CHEST_PAIN== '1':
-   CHEST_PAIN = NO
-elif CHEST_PAIN == '2':
-    CHEST_PAIN = YES
+if CHEST_PAIN== 'YES':
+   CHEST_PAIN = 2
+elif CHEST_PAIN == 'NO':
+    CHEST_PAIN = 1
 else:
     CHEST_PAIN = 0
 
-CHRONIC_DISEASE = st.selectbox('Apakah pasien mempunyai penyakit kronis?', ['1', '2'])
+CHRONIC_DISEASE = st.selectbox('Apakah pasien mempunyai penyakit kronis?', ['YES', 'NO'])
     
-if CHRONIC_DISEASE== '1':
-   CHRONIC_DISEASE = NO
-elif CHRONIC_DISEASE == '2':
-    CHRONIC_DISEASE = YES
+if CHRONIC_DISEASE== 'YES':
+   CHRONIC_DISEASE = 2
+elif CHRONIC_DISEASE == 'NO':
+    CHRONIC_DISEASE = 1
 else:
     CHRONIC_DISEASE = 0
 
-WHEEZING = st.selectbox('Apakah pasien mengi (Napas Berbunyi)?', ['1', '2'])
+WHEEZING = st.selectbox('Apakah pasien mengi (Napas Berbunyi)?', ['YES', 'NO'])
     
-if WHEEZING== '1':
-   WHEEZING = NO
-elif WHEEZING == '2':
-    WHEEZING = YES
+if WHEEZING== 'YES':
+   WHEEZING = 2
+elif WHEEZING == 'NO':
+    WHEEZING = 1
 else:
     WHEEZING = 0
 
