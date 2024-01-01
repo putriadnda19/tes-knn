@@ -8,7 +8,7 @@ model = pickle.load(open('knn-paru-paru.sav', 'rb'))
 st.title('Estimasi Pasien Yang Menderita Kanker Paru-Paru')
 
 
-AGE = st.text_input('Usia Anda')
+AGE = st.text_input('Usia Pasien')
 SMOKING = st.selectbox('Apakah pasien merokok?', ['YES', 'NO'])
 
 if SMOKING == 'YES':
@@ -101,7 +101,7 @@ else:
 
 
 
-kelas = ''
+kanker = ''
 
 if st.button('Estimasi'):
     estimasi_pasien = model.predict([[AGE, SMOKING, YELLOW_FINGERS, ANXIETY, PEER_PRESSURE, COUGHING, SHORTNESS_OF_BREATH, SWALLOWING_DIFFICULTY, CHEST_PAIN, CHRONIC_DISEASE, WHEEZING]])
